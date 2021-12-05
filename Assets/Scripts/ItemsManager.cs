@@ -3,10 +3,16 @@ using UnityEngine;
 
 public class ItemsManager : MonoBehaviour
 {
-    public List<ItemInfo> items;
+    [SerializeField] private List<ItemInfo> _parts;
+    
+    public static ItemsManager Instance { get; private set; }
+    public List<ItemInfo> Parts { get => _parts; private set => _parts = value; }
+
     private void Awake()
     {
-        //var items = GameObject.FindObjectOfTypeAll<ItemInfo>();
-        //items = new List<ItemInfo>(items);
+        Instance = this;
+
+        var parts = FindObjectsOfType<ItemInfo>();
+        Parts = new List<ItemInfo>(parts);
     }
 }

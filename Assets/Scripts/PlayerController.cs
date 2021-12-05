@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
     {
         var ray = FocusManager.Instance.CurrentCamera.ScreenPointToRay(Input.mousePosition);
         Debug.DrawRay(ray.origin, ray.direction, Color.yellow);
-        if (Physics.Raycast(ray, out RaycastHit raycastHit)
+        if (Physics.Raycast(ray, out RaycastHit raycastHit, 1 << 6)
             && raycastHit.transform.TryGetComponent(out IInteractable interactable))
         {
             Interactable = interactable;
