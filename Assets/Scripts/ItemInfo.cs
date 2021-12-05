@@ -33,5 +33,6 @@ public class ItemInfo : MonoBehaviour, IInteractable
     public void SetThisToCurrent(bool invokeEvent = true)
     {
         FocusManager.Instance.SetCurrentPart(this, invokeEvent);
+        TaskTracker.Instance.TaskDone(1);
     }
 }

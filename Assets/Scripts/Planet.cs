@@ -21,6 +21,8 @@ public class Planet : MonoBehaviour, IInteractable
     {
         _outline.enabled = true;
         PlanetInfoDisplay.Instance.ShowText(PlanetName, PlanetDesc);
+
+        TaskTracker.Instance.TaskDone(4);
     }
 
     public void OnInteractStop()

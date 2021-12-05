@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -56,6 +57,12 @@ public class PlayerController : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Interactable?.OnClicked();
+        }
+
+        if (TaskTracker.Instance.TaskId == 2 && Input.GetKeyDown(KeyCode.L))
+        {
+            TaskTracker.Instance.TaskDone(2);
+            SceneManager.LoadScene(1, LoadSceneMode.Single);
         }
     }
 

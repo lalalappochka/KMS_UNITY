@@ -23,6 +23,7 @@ public class PostProcessingManager : MonoBehaviour
         float delta = Input.GetKey(KeyCode.E) ? 1f : (Input.GetKey(KeyCode.Q) ? -1f : 0f);
         if (!Mathf.Approximately(delta, 0f))
         {
+            TaskTracker.Instance.TaskDone(3);
             _currentDepth = Mathf.Clamp(_currentDepth + delta * Time.deltaTime * _changeSpeed, .1f, 3f);
             _depth.focusDistance.value = _currentDepth;
             Debug.Log(_currentDepth);
