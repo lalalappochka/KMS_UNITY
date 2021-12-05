@@ -27,6 +27,7 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         var ray = FocusManager.Instance.CurrentCamera.ScreenPointToRay(Input.mousePosition);
+        Debug.DrawRay(ray.origin, ray.direction, Color.yellow);
         if (Physics.Raycast(ray, out RaycastHit raycastHit)
             && raycastHit.transform.TryGetComponent(out IInteractable interactable))
         {

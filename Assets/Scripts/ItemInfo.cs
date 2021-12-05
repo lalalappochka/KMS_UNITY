@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Outline), typeof(MeshCollider))]
 public class ItemInfo : MonoBehaviour, IInteractable
 {
     [SerializeField] private string _itemName;
