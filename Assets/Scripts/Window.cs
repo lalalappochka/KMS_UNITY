@@ -37,8 +37,8 @@ public class Window : MonoBehaviour, IInteractable
         _left.localEulerAngles = new Vector3(_left.localEulerAngles.x, _left.localEulerAngles.y, _leftRot);
         _right.localEulerAngles = new Vector3(_right.localEulerAngles.x, _right.localEulerAngles.y, _rightRot);
 
-        //_outline.enabled = false;
-        //this.enabled = false;
+        _outline.enabled = false;
+        this.enabled = false;
 
         //StartCoroutine(AnimationCoroutine(_left, 50f, 50f));
         //StartCoroutine(AnimationCoroutine(_right, 30f));
