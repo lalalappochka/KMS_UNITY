@@ -27,6 +27,11 @@ public class ItemInfo : MonoBehaviour, IInteractable
 
     public void OnClicked()
     {
-        FocusManager.Instance.CurrentPart = this;
+        SetThisToCurrent();
+    }
+
+    public void SetThisToCurrent(bool invokeEvent = true)
+    {
+        FocusManager.Instance.SetCurrentPart(this, invokeEvent);
     }
 }

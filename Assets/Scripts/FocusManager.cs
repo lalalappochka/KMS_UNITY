@@ -15,32 +15,32 @@ public class FocusManager : MonoBehaviour
     private Camera _startCamera;
 
     public Camera CurrentCamera { get; private set; }
-    public ItemInfo CurrentPart 
-    {
-        get => _currentPart;
-        set
-        {
-            //OnPartChanged?.Invoke(value);
-            if (_currentPart == value)
-            {
-                StopFocus();
-                _currentPart = null;
-                return;
-            }
-
-            _currentPart = value;
-            StartFocus(_currentPart.transform.position);
-
-        }
-    }
-
+    
     private void Awake()
     {
         Instance = this;
         _startCamera = Camera.main;
         CurrentCamera = _startCamera;
     }
-    
+
+    public void SetCurrentPart(ItemInfo part, bool invokeEvent)
+    {
+        if (_currentPart == part)
+        {
+            StopFocus();
+            _currentPart = null;
+            return;
+        }
+
+        if (invokeEvent)
+        {
+            OnPartChanged?.Invoke(_currentPart);
+        }
+
+        _currentPart = part;
+        StartFocus(_currentPart.transform.position);
+    }
+
     private void StartFocus(Vector3 pos)
     {
         CurrentCamera = _targetCamera;
