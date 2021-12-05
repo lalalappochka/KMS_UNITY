@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
                 _interactable = value;
                 _interactable?.OnInteractStart();
             }
+            Debug.Log($"Current interactable {((MonoBehaviour)_interactable).name}");
         }
     }
 
@@ -28,10 +29,16 @@ public class PlayerController : MonoBehaviour
     {
         var ray = FocusManager.Instance.CurrentCamera.ScreenPointToRay(Input.mousePosition);
         Debug.DrawRay(ray.origin, ray.direction, Color.yellow);
-        if (Physics.Raycast(ray, out RaycastHit raycastHit, 1 << 6)
-            && raycastHit.transform.TryGetComponent(out IInteractable interactable))
+        if (Physics.Raycast(ray, out RaycastHit raycastHit))
         {
-            Interactable = interactable;
+            if (raycastHit.transform.TryGetComponent(out IInteractable interactable))
+            {
+                Interactable = interactable;
+            }
+            else if (raycastHit.transform.root.TryGetComponent(out IInteractable rootInteractable))
+            {
+                Interactable = rootInteractable;
+            }
         }
         else
         {

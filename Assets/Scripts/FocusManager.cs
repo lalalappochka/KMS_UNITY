@@ -4,14 +4,14 @@ using UnityEngine;
 public class FocusManager : MonoBehaviour
 {
     public static FocusManager Instance { get; private set; }
-    public static Action<ItemInfo> OnPartChanged;
+    public static Action<IInteractable> OnPartChanged;
 
     [SerializeField] private FirstPersonController _fpsController;
     [SerializeField] private PlayerController _controller;
     [SerializeField] private Camera _fpsCamera;
     [SerializeField] private Camera _targetCamera;
 
-    private ItemInfo _currentPart;
+    private IInteractable _currentPart;
     private Camera _startCamera;
 
     public Camera CurrentCamera { get; private set; }
@@ -23,7 +23,7 @@ public class FocusManager : MonoBehaviour
         CurrentCamera = _startCamera;
     }
 
-    public void SetCurrentPart(ItemInfo part, bool invokeEvent)
+    public void SetCurrentPart(IInteractable part, bool invokeEvent)
     {
         if (_currentPart == part)
         {
@@ -38,7 +38,10 @@ public class FocusManager : MonoBehaviour
         }
 
         _currentPart = part;
-        StartFocus(_currentPart.transform.position);
+
+        var info = part as ItemInfo;
+        if (info != null)
+            StartFocus(info.transform.position);
     }
 
     private void StartFocus(Vector3 pos)

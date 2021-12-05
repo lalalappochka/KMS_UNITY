@@ -15,7 +15,7 @@ public class ItemsDropdown : MonoBehaviour
         ItemsManager.Instance.Parts.ForEach(item => _dropdown.options.Add(new Dropdown.OptionData(item.ItemName)));
     }
 
-    private void OnPartChangedHandler(ItemInfo obj)
+    private void OnPartChangedHandler(IInteractable obj)
     {
         if (obj == null)
         {
@@ -23,9 +23,11 @@ public class ItemsDropdown : MonoBehaviour
             return;
         }
 
+        var item = obj as ItemInfo;
+
         for (int i = 0; i < _dropdown.options.Count; i++)
         {
-            if (_dropdown.options[i].text == obj.ItemName)
+            if (_dropdown.options[i].text == item.ItemName)
             {
                 _dropdown.value = i;
                 break;
