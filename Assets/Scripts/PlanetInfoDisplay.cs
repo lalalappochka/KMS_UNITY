@@ -37,7 +37,7 @@ public class PlanetInfoDisplay : MonoBehaviour
         _group.alpha = 0f;
         while (true)
         {
-            float alpha = Mathf.Clamp01((startTime - Time.time) / duration);
+            float alpha = Mathf.Clamp01((Time.time - startTime) / duration);
 
             _group.alpha = alpha;
 
