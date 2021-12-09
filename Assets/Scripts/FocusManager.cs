@@ -25,18 +25,17 @@ public class FocusManager : MonoBehaviour
 
     public void SetCurrentPart(IInteractable part, bool invokeEvent)
     {
+        if (invokeEvent)
+        {
+            OnPartChanged?.Invoke(part);
+        }
+
         if (_currentPart == part)
         {
             StopFocus();
             _currentPart = null;
             return;
         }
-
-        if (invokeEvent)
-        {
-            OnPartChanged?.Invoke(_currentPart);
-        }
-
         _currentPart = part;
 
         var info = part as ItemInfo;
