@@ -5,7 +5,7 @@ public class PostProcessingManager : MonoBehaviour
 {
     [SerializeField] private float _changeSpeed = 0.5f;
     [SerializeField] private PostProcessVolume _volume;
-    [SerializeField] private RectTransform _switch;
+    [SerializeField] private Transform _switch;
 
     private DepthOfField _depth;
     private float _currentDepth;
@@ -27,7 +27,7 @@ public class PostProcessingManager : MonoBehaviour
             _depth.focusDistance.value = _currentDepth;
             if (_currentDepth > .1f && _currentDepth < 3f)
             {
-                _switch.Rotate(-Vector3.forward * delta);
+                _switch.Rotate(Vector3.forward * delta);
             }
         }
     }
