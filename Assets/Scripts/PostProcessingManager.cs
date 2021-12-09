@@ -14,11 +14,16 @@ public class PostProcessingManager : MonoBehaviour
     {
         _volume.profile.TryGetSettings(out _depth);
 
-        _currentDepth = _depth.focusDistance.value;
+        if (_depth != null)
+        {
+            _currentDepth = _depth.focusDistance.value;
+        }
     }
 
     private void Update()
     {
+        if (_depth == null) return;
+
         float delta = Input.GetKey(KeyCode.E) ? 1f : (Input.GetKey(KeyCode.Q) ? -1f : 0f);
         if (!Mathf.Approximately(delta, 0f))
         {
