@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.009782872, g: 0.051867522, b: 0.15223652, a: 1}
+  m_IndirectSpecularColor: {r: 0.009786322, g: 0.05188985, b: 0.15229288, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1052,7 +1052,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 766efd7408f9f4c4c80e06a0ab0b6f54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _itemName: "\u041C\u0438\u043D\u0438 \u0440\u0435\u0433\u0443\u043B\u044F\u0442\u043E\u0440\u044B?"
+  _itemName: "\u0440\u0435\u0433\u0443\u043B\u044F\u0442\u043E\u0440\u044B \u043A\u0440\u0435\u043F\u043B\u0435\u043D\u0438\u044F"
 --- !u!64 &201241245
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1102,7 +1102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 766efd7408f9f4c4c80e06a0ab0b6f54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _itemName: "\u0420\u0435\u0433\u0443\u043B\u044F\u0442\u043E\u0440\u044B? \u0445\u0437"
+  _itemName: "\u0420\u0435\u0433\u0443\u043B\u044F\u0442\u043E\u0440\u044B \u043F\u043E\u043B\u043E\u0436\u0435\u043D\u0438\u044F"
 --- !u!64 &430148361
 MeshCollider:
   m_ObjectHideFlags: 0
