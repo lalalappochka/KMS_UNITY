@@ -15,6 +15,11 @@ public class PlanetsViewer : MonoBehaviour
                 _planet?.OnInteractStop();
                 _planet = value;
                 _planet?.OnInteractStart();
+
+                if (_planet != null)
+                {
+                    PlanetsTable.Inst.SawPlanet(_planet.PlanetName);
+                }
             }
         }
     }
