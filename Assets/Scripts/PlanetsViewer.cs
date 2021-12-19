@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlanetsViewer : MonoBehaviour
 {
@@ -44,6 +45,11 @@ public class PlanetsViewer : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             CurrentPlanet?.OnClicked();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            SceneManager.LoadScene(0);
         }
     }
 
