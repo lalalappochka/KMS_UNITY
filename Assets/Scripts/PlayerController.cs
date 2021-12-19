@@ -17,7 +17,6 @@ public class PlayerController : MonoBehaviour
                 _interactable = value;
                 _interactable?.OnInteractStart();
             }
-            Debug.Log($"Current interactable {((MonoBehaviour)_interactable).name}");
         }
     }
 

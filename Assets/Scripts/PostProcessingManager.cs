@@ -18,6 +18,15 @@ public class PostProcessingManager : MonoBehaviour
         {
             _currentDepth = _depth.focusDistance.value;
         }
+
+        
+        foreach (var a in FindObjectsOfType<MeshFilter>())
+        {
+            if (a.mesh.name.Contains("Cylinder"))
+            {
+                Debug.Log(a.transform.root.gameObject.name);
+            }
+        }
     }
 
     private void Update()
