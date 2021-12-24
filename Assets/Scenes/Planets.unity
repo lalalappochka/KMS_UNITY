@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.009782872, g: 0.051867522, b: 0.15223652, a: 1}
+  m_IndirectSpecularColor: {r: 0.01965872, g: 0.100166224, b: 0.26759893, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -230,7 +230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _planetName: "\u041B\u0443\u043D\u0430"
-  _planetDesc: "\u0435\u0434\u0438\u043D\u0441\u0442\u0432\u0435\u043D\u043D\u044B\u0439
+  _planetDesc: "\u0415\u0434\u0438\u043D\u0441\u0442\u0432\u0435\u043D\u043D\u044B\u0439
     \u0435\u0441\u0442\u0435\u0441\u0442\u0432\u0435\u043D\u043D\u044B\u0439 \u0441\u043F\u0443\u0442\u043D\u0438\u043A
     \u0417\u0435\u043C\u043B\u0438"
 --- !u!114 &189327102
@@ -321,11 +321,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6367454210674331237, guid: 1685259dd133f344ea449149936c409a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.85017
+      value: 1.58
       objectReference: {fileID: 0}
     - target: {fileID: 6367454210674331237, guid: 1685259dd133f344ea449149936c409a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.8334827
+      value: 7.29
       objectReference: {fileID: 0}
     - target: {fileID: 6367454210674331237, guid: 1685259dd133f344ea449149936c409a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -481,12 +481,12 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 26
+    m_FontSize: 19
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 40
-    m_Alignment: 1
+    m_MaxSize: 219
+    m_Alignment: 2
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -573,8 +573,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 307.05, y: 180.83}
+  m_AnchoredPosition: {x: -10, y: 10}
+  m_SizeDelta: {x: 287.05, y: 78.26}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &463604987
 MonoBehaviour:
@@ -808,11 +808,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3227996930518885705, guid: 4f9c78595e8fd1243af3e339e84296b4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.177132
+      value: -8.85
       objectReference: {fileID: 0}
     - target: {fileID: 3227996930518885705, guid: 4f9c78595e8fd1243af3e339e84296b4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.073432
+      value: 10.93
       objectReference: {fileID: 0}
     - target: {fileID: 3227996930518885705, guid: 4f9c78595e8fd1243af3e339e84296b4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -870,7 +870,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _planetName: "\u0417\u0432\u0435\u0437\u0434\u0430"
-  _planetDesc: "\u0430\u0441\u0442\u0440\u043E\u043D\u043E\u043C\u0438\u0447\u0435\u0441\u043A\u0438\u0439
+  _planetDesc: "\u0410\u0441\u0442\u0440\u043E\u043D\u043E\u043C\u0438\u0447\u0435\u0441\u043A\u0438\u0439
     \u043E\u0431\u044A\u0435\u043A\u0442"
 --- !u!114 &728246052
 MonoBehaviour:
@@ -908,7 +908,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _planetName: "\u041C\u0430\u0440\u0441"
-  _planetDesc: "\u043D\u0430\u0437\u044B\u0432\u0430\u044E\u0442 \u043A\u0440\u0430\u0441\u043D\u043E\u0439
+  _planetDesc: "\u041D\u0430\u0437\u044B\u0432\u0430\u044E\u0442 \u043A\u0440\u0430\u0441\u043D\u043E\u0439
     \u043F\u043B\u0430\u043D\u0435\u0442\u043E\u0439"
 --- !u!114 &769461695
 MonoBehaviour:
@@ -941,11 +941,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 90588877594313607, guid: a9e0e99f4a391504a9ba91f17ad35f50, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.972711
+      value: 11.4
       objectReference: {fileID: 0}
     - target: {fileID: 90588877594313607, guid: a9e0e99f4a391504a9ba91f17ad35f50, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.7916574
+      value: 9.6
       objectReference: {fileID: 0}
     - target: {fileID: 90588877594313607, guid: a9e0e99f4a391504a9ba91f17ad35f50, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1091,6 +1091,14 @@ PrefabInstance:
     - target: {fileID: 4062370705659856489, guid: d2c8b7e7732c2a14eb4fd183d112afaf, type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062370705659856489, guid: d2c8b7e7732c2a14eb4fd183d112afaf, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062370705659856489, guid: d2c8b7e7732c2a14eb4fd183d112afaf, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2c8b7e7732c2a14eb4fd183d112afaf, type: 3}
@@ -1279,11 +1287,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5603814009321829889, guid: d3417e8afef8d9c4cb221532e56dba66, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.689782
+      value: -13.2
       objectReference: {fileID: 0}
     - target: {fileID: 5603814009321829889, guid: d3417e8afef8d9c4cb221532e56dba66, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.707595
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5603814009321829889, guid: d3417e8afef8d9c4cb221532e56dba66, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1376,8 +1384,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 492.95, y: 180.83}
+  m_AnchoredPosition: {x: 10, y: 10}
+  m_SizeDelta: {x: 492.95, y: 78.26}
   m_Pivot: {x: 0, y: 0}
 --- !u!225 &1217510648
 CanvasGroup:
@@ -1419,7 +1427,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _planetName: "\u0421\u0430\u0442\u0443\u0440\u043D"
-  _planetDesc: "\u044D\u0442\u043E \u0432\u0442\u043E\u0440\u0430\u044F \u043F\u043E
+  _planetDesc: "\u042D\u0442\u043E \u0432\u0442\u043E\u0440\u0430\u044F \u043F\u043E
     \u0440\u0430\u0437\u043C\u0435\u0440\u0430\u043C \u043F\u043B\u0430\u043D\u0435\u0442\u0430
     \u0432 \u0421\u043E\u043B\u043D\u0435\u0447\u043D\u043E\u0439 \u0441\u0438\u0441\u0442\u0435\u043C\u0435"
 --- !u!114 &1256326269
@@ -1527,11 +1535,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7926735558803957751, guid: 5f2c78d63c0aa4b46a2d1ed86a580f49, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.0718794
+      value: -11.8
       objectReference: {fileID: 0}
     - target: {fileID: 7926735558803957751, guid: 5f2c78d63c0aa4b46a2d1ed86a580f49, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.652854
+      value: 13.9
       objectReference: {fileID: 0}
     - target: {fileID: 7926735558803957751, guid: 5f2c78d63c0aa4b46a2d1ed86a580f49, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1743,8 +1751,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -17.32}
-  m_SizeDelta: {x: 0, y: -34.639}
+  m_AnchoredPosition: {x: 0, y: -14.532}
+  m_SizeDelta: {x: 0, y: -23.703}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1408287999
 MonoBehaviour:
@@ -1768,18 +1776,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 24
+    m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 0
     m_MaxSize: 42
-    m_Alignment: 0
+    m_Alignment: 6
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: 123
 --- !u!222 &1408288000
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1822,7 +1830,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -15.000008}
+  m_AnchoredPosition: {x: 0, y: -15.000006}
   m_SizeDelta: {x: 0, y: -30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1581630595
@@ -1847,12 +1855,12 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 22
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 0
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 8
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -1923,6 +1931,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384740, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
+      propertyPath: zoomFOV
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459864850019384740, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: crosshair
       value: 0
       objectReference: {fileID: 0}
@@ -1937,6 +1949,10 @@ PrefabInstance:
     - target: {fileID: 4459864850019384740, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: enableSprint
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459864850019384740, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
+      propertyPath: maxLookAngle
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384740, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: enableHeadBob
@@ -1978,7 +1994,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _planetName: "\u041D\u0435\u043F\u0442\u0443\u043D"
-  _planetDesc: "\u0432\u043E\u0441\u044C\u043C\u0430\u044F \u0438 \u0441\u0430\u043C\u0430\u044F
+  _planetDesc: "\u0412\u043E\u0441\u044C\u043C\u0430\u044F \u0438 \u0441\u0430\u043C\u0430\u044F
     \u0434\u0430\u043B\u044C\u043D\u044F\u044F \u043E\u0442 \u0421\u043E\u043B\u043D\u0446\u0430
     \u043F\u043B\u0430\u043D\u0435\u0442\u0430 \u0421\u043E\u043B\u043D\u0435\u0447\u043D\u043E\u0439
     \u0441\u0438\u0441\u0442\u0435\u043C\u044B."
@@ -2032,10 +2048,10 @@ RectTransform:
   m_Father: {fileID: 1217510647}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 34.6391}
+  m_AnchorMin: {x: 0, y: 0.6628798}
+  m_AnchorMax: {x: 0.9857998, y: 0.6628798}
+  m_AnchoredPosition: {x: 3.5, y: 26.383003}
+  m_SizeDelta: {x: 7, y: 26.383}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1790380162
 MonoBehaviour:
@@ -2059,18 +2075,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 32
+    m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 0
     m_MaxSize: 42
-    m_Alignment: 0
+    m_Alignment: 6
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: 123
 --- !u!222 &1790380163
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2097,7 +2113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _planetName: "\u041C\u0435\u0440\u043A\u0443\u0440\u0438\u0439"
-  _planetDesc: "\u0431\u043B\u0438\u0436\u0430\u0439\u0448\u0430\u044F \u043A \u0421\u043E\u043B\u043D\u0446\u0443
+  _planetDesc: "\u0411\u043B\u0438\u0436\u0430\u0439\u0448\u0430\u044F \u043A \u0421\u043E\u043B\u043D\u0446\u0443
     \u043F\u043B\u0430\u043D\u0435\u0442\u0430 \u0421\u043E\u043B\u043D\u0435\u0447\u043D\u043E\u0439
     \u0441\u0438\u0441\u0442\u0435\u043C\u044B, \u043D\u0430\u0438\u043C\u0435\u043D\u044C\u0448\u0430\u044F
     \u0438\u0437 \u043F\u043B\u0430\u043D\u0435\u0442 \u0437\u0435\u043C\u043D\u043E\u0439
@@ -2145,16 +2161,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1941255105}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0.008727718, y: -0.0035880073, z: -0.00003131651, w: 0.99995553}
+  m_LocalPosition: {x: 0, y: 0, z: -0.26172653}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1363410733}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -1, y: -0.411, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.0018781973, y: -0.0022888184}
   m_SizeDelta: {x: 200, y: 30}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1941255107
@@ -2179,11 +2195,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 28
+    m_FontSize: 22
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
-    m_MaxSize: 40
+    m_MinSize: 0
+    m_MaxSize: 129
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -2218,7 +2234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _planetName: "\u0423\u0440\u0430\u043D"
-  _planetDesc: "\u044D\u0442\u043E \u043F\u043B\u0430\u043D\u0435\u0442\u0430 \u0421\u043E\u043B\u043D\u0435\u0447\u043D\u043E\u0439
+  _planetDesc: "\u042D\u0442\u043E \u043F\u043B\u0430\u043D\u0435\u0442\u0430 \u0421\u043E\u043B\u043D\u0435\u0447\u043D\u043E\u0439
     \u0441\u0438\u0441\u0442\u0435\u043C\u044B, \u0441\u0435\u0434\u044C\u043C\u0430\u044F
     \u043F\u043E \u0443\u0434\u0430\u043B\u0451\u043D\u043D\u043E\u0441\u0442\u0438
     \u043E\u0442 \u0421\u043E\u043B\u043D\u0446\u0430."
@@ -2375,7 +2391,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4814609070696759973}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.9889, y: 8.402209, z: 0.05542898}
+  m_LocalPosition: {x: 3.4, y: 12.9, z: 0.05542898}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

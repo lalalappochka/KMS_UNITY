@@ -42,25 +42,7 @@ public class Window : MonoBehaviour, IInteractable
 
         TaskTracker.Instance.TaskDone(0);
 
-        //StartCoroutine(AnimationCoroutine(_left, 50f, 50f));
-        //StartCoroutine(AnimationCoroutine(_right, 30f));
     }
 
-    //private IEnumerator AnimationCoroutine(Transform obj, float angle, float delta)
-    //{
-    //    while (true)
-    //    {
-    //        obj.Rotate(Vector3.forward * delta * Time.deltaTime);
 
-    //        float currAngle = obj.localEulerAngles.z;
-    //        Debug.Log(currAngle);
-    //        if (currAngle > angle)
-    //        {
-    //            Debug.Log($"broke {currAngle }; {angle}");
-    //            break;
-    //        }
-
-    //        yield return null;
-    //    }
-    //}
 }
